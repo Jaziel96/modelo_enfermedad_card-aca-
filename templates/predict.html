@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Predicción</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Formulario de Predicción</h1>
+        <form method="post" class="mt-3">
+            <!-- Agregar campos del formulario para cada característica -->
+            <div class="form-group">
+                <label for="age">Edad</label>
+                <input type="number" class="form-control" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label for="sex">Sexo (male/female)</label>
+                <input type="text" class="form-control" id="sex" name="sex" required>
+            </div>
+            <div class="form-group">
+                <label for="cp">Tipo de dolor en el pecho (typical angina, atypical angina, non-anginal pain, asymptomatic)</label>
+                <input type="text" class="form-control" id="cp" name="cp" required>
+            </div>
+            <div class="form-group">
+                <label for="trestbps">Presión arterial en reposo</label>
+                <input type="number" class="form-control" id="trestbps" name="trestbps" required>
+            </div>
+            <div class="form-group">
+                <label for="chol">Colesterol sérico</label>
+                <input type="number" class="form-control" id="chol" name="chol" required>
+            </div>
+            <div class="form-group">
+                <label for="fbs">Azúcar en sangre en ayunas (> 120 mg/dl, 1 = verdadero; 0 = falso)</label>
+                <input type="number" class="form-control" id="fbs" name="fbs" required>
+            </div>
+            <div class="form-group">
+                <label for="restecg">Resultados electrocardiográficos en reposo (0-2)</label>
+                <input type="number" class="form-control" id="restecg" name="restecg" required>
+            </div>
+            <div class="form-group">
+                <label for="thalach">Frecuencia cardíaca máxima alcanzada</label>
+                <input type="number" class="form-control" id="thalach" name="thalach" required>
+            </div>
+            <div class="form-group">
+                <label for="exang">Angina inducida por ejercicio (1 = sí; 0 = no)</label>
+                <input type="number" class="form-control" id="exang" name="exang" required>
+            </div>
+            <div class="form-group">
+                <label for="oldpeak">Depresión del ST inducida por el ejercicio en relación con el reposo</label>
+                <input type="number" class="form-control" id="oldpeak" name="oldpeak" required>
+            </div>
+            <div class="form-group">
+                <label for="slope">Pendiente del segmento ST de ejercicio máximo (0-2)</label>
+                <input type="number" class="form-control" id="slope" name="slope" required>
+            </div>
+            <div class="form-group">
+                <label for="ca">Número de vasos principales coloreados por fluoroscopia (0-3)</label>
+                <input type="number" class="form-control" id="ca" name="ca" required>
+            </div>
+            <div class="form-group">
+                <label for="thal">Talasemia (1 = normal; 2 = defecto fijo; 3 = defecto reversible)</label>
+                <input type="number" class="form-control" id="thal" name="thal" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Predecir</button>
+        </form>
+    </div>
+</body>
+</html>
